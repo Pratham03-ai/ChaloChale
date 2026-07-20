@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChaloChale Travel App</title>
+    <link rel="stylesheet" href="/CSS/index.css">
+
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+
+            <!-- Brand -->
+            <a class="navbar-brand" href="#">
+                <i class="fas fa-plane-departure"></i>
+                ChaloChale
+            </a>
+
+            <!-- Toggle Button -->
+            <button class="navbar-toggler" type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbarNav"
+                    aria-controls="navbarNav"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation">
+
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Navbar Links -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link active" href="Destinations.html">Destination</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link active" href="Packages.html">Packages</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="booking.html">Booking</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="Contact.html">Contact</a>
+                    </li>
+                    <a href="signup.html" class="btn btn-warning ms-lg-3">Sign Up</a>
+                    <a href="login.html" class="btn btn-warning ms-lg-3">Login</a>
+
+                </ul>
+            </div>
+
+        </div>
+    </nav>
+
+    <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active" data-bs-interval="10000">
+      <img src="/images/dest1.png" class="d-block w-100" alt="..." height="850">
+      <div class="carousel-caption d-none d-md-block">
+        <h5 class="fw-bolder">Adventure Beautiful Mountains </h5>
+        <p  class="fw-bold">Plan your next vacation with ChaloChale</p>
+        <button class="btn btn-primary ms-lg-3">Explore Now</button>
+      </div>
+    </div>
+    <div class="carousel-item" data-bs-interval="2000">
+      <img src="/images/dest2.jpg" class="d-block w-100"  height="850" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h5 class="fw-bolder">Explore Beautiful Beaches</h5>
+        <p class="fw-bold">See your next Sunset on a beautiful beach</p>
+        <button class="btn btn-secondary ms-lg-3">View Beaches</button>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="/images/image3.jpg_alt=media" class="d-block w-100" alt="..." height="850">
+      <div class="carousel-caption d-none d-md-block">
+        <h5 class="fw-bolder">Explore Lake-Side View</h5>
+        <p class="fw-bold">Discover trekking and Hiking Packages</p>
+        <button class="btn btn-success ms-lg-3">View Mountains</button>
+      </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+<section class="py-5">
+<div class="container">
+  <h2 class="text-center fw-bold mb-4">Popular Destinations</h2>
+  <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3 g-4">
+    <div class="col">
+      <div class="card h-100 destination-card">
+        <div class="card-image-wrapper">
+          <img src="card1.jpg" class="card-img-top" alt="Agra">
+          <div class="card-badge">
+            <span class="badge bg-primary">Popular</span>
+          </div>
+        </div>
+        <div class="card-body">
+          <div class="card-meta">
+            <span class="rating"><i class="fas fa-star text-warning"></i> 4.8</span>
+            <span class="location"><i class="fas fa-map-marker-alt text-danger"></i> India</span>
+          </div>
+          <h5 class="card-title">Agra</h5>
+          <p class="card-text">Witness the timeless beauty of the Taj Mahal, a symbol of eternal love and architectural brilliance.</p>
+          <div class="card-footer mt-auto">
+            <button class="btn btn-primary w-100">Explore Now</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card h-100 destination-card">
+        <div class="card-image-wrapper">
+          <img src="card2.jpg" class="card-img-top" alt="Jaipur">
+          <div class="card-badge">
+            <span class="badge bg-success">Trending</span>
+          </div>
+        </div>
+ <div class="card-body">
+          <div class="card-meta">
+            <span class="rating"><i class="fas fa-star text-warning"></i> 4.9</span>
+            <span class="location"><i class="fas fa-map-marker-alt text-danger"></i> Rajasthan</span>
+          </div>
+          <h5 class="card-title">Jaipur</h5>
+          <p class="card-text">Explore Jaipur's majestic palaces that showcase the grandeur and royal heritage of Rajasthan.</p>
+          <div class="card-footer mt-auto">
+
+<button class="btn btn-primary w-100">Explore Now</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card h-100 destination-card">
+        <div class="card-image-wrapper">
+          <img src="card3.jpg" class="card-img-top" alt="Goa">
+          <div class="card-badge">
+            <span class="badge bg-info">Beach</span>
+          </div>
+        </div>
+        <div class="card-body">
+          <div class="card-meta">
+            <span class="rating"><i class="fas fa-star text-warning"></i> 4.7</span>
+            <span class="location"><i class="fas fa-map-marker-alt text-danger"></i> Goa</span>
+          </div>
+          <h5 class="card-title">Goa</h5>
+          <p class="card-text">Relax on Goa's stunning beaches, where golden sands meet vibrant coastal life.</p>
+          <div class="card-footer mt-auto">
+            <button class="btn btn-primary w-100">Explore Now</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+
+<section class="py-5 bg-light">
+  <div class="container">
+    <h2 class="text-center fw-bold mb-4">Featured Packages</h2>
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3 g-4">
+      <div class="col">
+        <div class="card h-100 pricing-card">
+          <div class="card-header">
+            <h5 class="fw-bold">Goa Beach Packages</h5>
+            <span class="badge bg-warning text-dark">Best Value</span>
+          </div>
+          <div class="card-body">
+            <div class="price-tag">
+              <span class="currency">$</span>
+              <span class="amount">999</span>
+              <span class="period">/person</span>
+            </div>
+            <p class="duration"><i class="fas fa-calendar-alt"></i> 5 Days / 4 Nights</p>
+            <ul class="features-list">
+              <li><i class="fas fa-check text-success"></i> Beachside Resort</li>
+              <li><i class="fas fa-check text-success"></i> Water Sports</li>
+              <li><i class="fas fa-check text-success"></i> Local Cuisine</li>
+              <li><i class="fas fa-check text-success"></i> Airport Transfer</li>
+            </ul>
+            <button class="btn btn-primary w-100 mt-3" data-bs-target="#bookingModal">Book Now</button>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100 pricing-card featured">
+          <div class="card-header">
+            <h5 class="fw-bold">Manali Adventure</h5>
+            <span class="badge bg-danger">Popular</span>
+          </div>
+          <div class="card-body">
+            <div class="price-tag">
+              <span class="currency">$</span>
+              <span class="amount">1200</span>
+              <span class="period">/person</span>
+            </div>
+            <p class="duration"><i class="fas fa-calendar-alt"></i> 6 Days / 5 Nights</p>
+            <ul class="features-list">
+              <li><i class="fas fa-check text-success"></i> Mountain Resort</li>
+              <li><i class="fas fa-check text-success"></i> Trekking Guide</li>
+              <li><i class="fas fa-check text-success"></i> Adventure Sports</li>
+              <li><i class="fas fa-check text-success"></i> All Meals Included</li>
+            </ul>
+            <button class="btn btn-primary w-100 mt-3" data-bs-target="#bookingModal">Book Now</button>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100 pricing-card">
+          <div class="card-header">
+            <h5 class="fw-bold">Kerala Backwater</h5>
+            <span class="badge bg-info">Relaxing</span>
+          </div>
+          <div class="card-body">
+            <div class="price-tag">
+              <span class="currency">$</span>
+              <span class="amount">1000</span>
+              <span class="period">/person</span>
+            </div>
+            <p class="duration"><i class="fas fa-calendar-alt"></i> 4 Days / 3 Nights</p>
+            <ul class="features-list">
+              <li><i class="fas fa-check text-success"></i> Houseboat Stay</li>
+              <li><i class="fas fa-check text-success"></i> Village Tours</li>
+              <li><i class="fas fa-check text-success"></i> Ayurvedic Spa</li>
+              <li><i class="fas fa-check text-success"></i> Traditional Meals</li>
+            </ul>
+            <button class="btn btn-primary w-100 mt-3" data-bs-target="#bookingModal">Book Now</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row footer-content">
+                <div class="col-lg-4 mb-4">
+                    <div class="footer-logo">
+                        <i class="fas fa-plane-departure"></i>
+                        ChaloChale
+                    </div>
+                    <p class="footer-description">
+                        Your trusted travel companion for exploring the world's most beautiful destinations. We make travel planning easy and affordable.
+                    </p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 mb-4">
+                    <h5 class="footer-heading">Quick Links</h5>
+                    <ul class="footer-links">
+                        <li><a href="index.html"><i class="fas fa-chevron-right"></i> Home</a></li>
+                        <li><a href="Destinations.html"><i class="fas fa-chevron-right"></i> Destinations</a></li>
+                        <li><a href="Packages.html"><i class="fas fa-chevron-right"></i> Packages</a></li>
+                        <li><a href="Booking.html"><i class="fas fa-chevron-right"></i> Booking</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-4 mb-4">
+                    <h5 class="footer-heading">Support</h5>
+                    <ul class="footer-links">
+                        <li><a href="Contact.html"><i class="fas fa-chevron-right"></i> Contact Us</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> FAQ</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> Privacy Policy</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> Terms of Service</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-4 mb-4">
+                    <h5 class="footer-heading">Contact Info</h5>
+                    <div class="footer-contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>123 Travel Street, Mumbai, India</span>
+                    </div>
+                    <div class="footer-contact-item">
+                        <i class="fas fa-phone"></i>
+                        <span>+91 98765 43210</span>
+                    </div>
+                    <div class="footer-contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>info@chalochale.com</span>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 ChaloChale Travel App. All rights reserved. | Designed with <i class="fas fa-heart text-danger"></i> by ChaloChale Team</p>
+            </div>
+        </div>
+    </footer>
+    <!-- Bootstrap 5 JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

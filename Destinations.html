@@ -4,11 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Destination Page</title>
-    <link rel="stylesheet" href="/CSS/Destinations.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
     
     <!-- Font Awesome for Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="/CSS/index.css">
 </head>
 <body>
      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -53,7 +53,8 @@
                     <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="Contact.html">Contact</a>
                     </li>
-                    <a href="" class="btn btn-warning ms-lg-3">Login</a>
+                    <a href="signup.html" class="btn btn-warning ms-lg-3">Sign Up</a>
+                    <a href="login.html" class="btn btn-warning ms-lg-3">Login</a>
 
                 </ul>
             </div>
@@ -62,39 +63,135 @@
     </nav>
 
   <div class="container mt-5">
-    <h2 class="fw-bold text-center">Top Destinations</h2>
+    <h2 class="text-center fw-bold mb-4">Top Destinations</h2>
     <p class="lead text-center">Explore amazing destinations with ChaloChale travel app</p>
   </div>
   <section class="py-5">
     <div class="container">
-      <div class="row row-cols-1 row-cols-md-3 g-4">
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3 g-4">
         <div class="col">
-          <div class="card h-100">
-            <img src="card1.jpg" class="card-img-top" alt="Agra" height="250">
+          <div class="card h-100 destination-card">
+            <div class="card-image-wrapper">
+              <img src="card1.jpg" class="card-img-top" alt="Agra">
+              <div class="card-badge">
+                <span class="badge bg-primary">Popular</span>
+              </div>
+            </div>
             <div class="card-body">
+              <div class="card-meta">
+                <span class="rating"><i class="fas fa-star text-warning"></i> 4.8</span>
+                <span class="location"><i class="fas fa-map-marker-alt text-danger"></i> India</span>
+              </div>
               <h5 class="card-title">Agra</h5>
               <p class="card-text">Witness the timeless beauty of the Taj Mahal, a symbol of eternal love and architectural brilliance.</p>
-              <button class="btn btn-primary w-100 mt-2" data-bs-target="#bookingModal">Book Now</button>
+              <div class="card-footer mt-auto">
+                <button class="btn btn-primary w-100">Explore Now</button>
+              </div>
             </div>
           </div>
         </div>
         <div class="col">
-          <div class="card h-100">
-            <img src="card2.jpg" class="card-img-top" alt="Jaipur" height="250">
+          <div class="card h-100 destination-card">
+            <div class="card-image-wrapper">
+              <img src="card2.jpg" class="card-img-top" alt="Jaipur">
+              <div class="card-badge">
+                <span class="badge bg-success">Trending</span>
+              </div>
+            </div>
             <div class="card-body">
+              <div class="card-meta">
+                <span class="rating"><i class="fas fa-star text-warning"></i> 4.9</span>
+                <span class="location"><i class="fas fa-map-marker-alt text-danger"></i> Rajasthan</span>
+              </div>
               <h5 class="card-title">Jaipur</h5>
               <p class="card-text">Explore Jaipur's majestic palaces that showcase the grandeur and royal heritage of Rajasthan.</p>
-              <button class="btn btn-primary w-100 mt-2" data-bs-target="#bookingModal">Book Now</button>
+              <div class="card-footer mt-auto">
+                <button class="btn btn-primary w-100">Explore Now</button>
+              </div>
             </div>
           </div>
         </div>
         <div class="col">
-          <div class="card h-100">
-            <img src="card3.jpg" class="card-img-top" alt="Goa" height="250">
+          <div class="card h-100 destination-card">
+            <div class="card-image-wrapper">
+              <img src="card3.jpg" class="card-img-top" alt="Goa">
+              <div class="card-badge">
+                <span class="badge bg-info">Beach</span>
+              </div>
+            </div>
             <div class="card-body">
+              <div class="card-meta">
+                <span class="rating"><i class="fas fa-star text-warning"></i> 4.7</span>
+                <span class="location"><i class="fas fa-map-marker-alt text-danger"></i> Goa</span>
+              </div>
               <h5 class="card-title">Goa</h5>
               <p class="card-text">Relax on Goa's stunning beaches, where golden sands meet vibrant coastal life.</p>
-              <button class="btn btn-primary w-100 mt-2" data-bs-target="#bookingModal">Book Now</button>
+              <div class="card-footer mt-auto">
+                <button class="btn btn-primary w-100">Explore Now</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100 destination-card">
+            <div class="card-image-wrapper">
+              <img src="card4.jpg" class="card-img-top" alt="Manali">
+              <div class="card-badge">
+                <span class="badge bg-danger">Adventure</span>
+              </div>
+            </div>
+            <div class="card-body">
+              <div class="card-meta">
+                <span class="rating"><i class="fas fa-star text-warning"></i> 4.6</span>
+                <span class="location"><i class="fas fa-map-marker-alt text-danger"></i> Himachal</span>
+              </div>
+              <h5 class="card-title">Manali</h5>
+              <p class="card-text">Experience thrilling adventures in the mountains with trekking, paragliding, and scenic beauty.</p>
+              <div class="card-footer mt-auto">
+                <button class="btn btn-primary w-100">Explore Now</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100 destination-card">
+            <div class="card-image-wrapper">
+              <img src="card5.jpg" class="card-img-top" alt="Kerala">
+              <div class="card-badge">
+                <span class="badge bg-secondary">Nature</span>
+              </div>
+            </div>
+            <div class="card-body">
+              <div class="card-meta">
+                <span class="rating"><i class="fas fa-star text-warning"></i> 4.8</span>
+                <span class="location"><i class="fas fa-map-marker-alt text-danger"></i> Kerala</span>
+              </div>
+              <h5 class="card-title">Kerala</h5>
+              <p class="card-text">Discover serene backwaters, lush tea plantations, and authentic Ayurvedic experiences.</p>
+              <div class="card-footer mt-auto">
+                <button class="btn btn-primary w-100">Explore Now</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100 destination-card">
+            <div class="card-image-wrapper">
+              <img src="card6.jpg" class="card-img-top" alt="Delhi">
+              <div class="card-badge">
+                <span class="badge bg-warning text-dark">Heritage</span>
+              </div>
+            </div>
+            <div class="card-body">
+              <div class="card-meta">
+                <span class="rating"><i class="fas fa-star text-warning"></i> 4.5</span>
+                <span class="location"><i class="fas fa-map-marker-alt text-danger"></i> Delhi</span>
+              </div>
+              <h5 class="card-title">Delhi</h5>
+              <p class="card-text">Explore India's capital with its rich history, monuments, and vibrant cultural heritage.</p>
+              <div class="card-footer mt-auto">
+                <button class="btn btn-primary w-100">Explore Now</button>
+              </div>
             </div>
           </div>
         </div>

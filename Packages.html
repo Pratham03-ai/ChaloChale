@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Destination Page</title>
-    <link rel="stylesheet" href="/CSS/Packages.css">
+    <title>Packages Page</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
     
     <!-- Font Awesome for Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="/CSS/index.css">
 </head>
 <body>
      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -63,39 +63,147 @@
     </nav>
 
   <div class="container mt-5">
-    <h2 class="fw-bold text-center">Travel Packages</h2>
+    <h2 class="text-center fw-bold mb-4">Travel Packages</h2>
     <p class="lead text-center">Choose your perfect travel plan at best price</p>
   </div>
   <section class="py-5 bg-light">
     <div class="container">
-      <div class="row row-cols-1 row-cols-md-3 g-4">
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3 g-4">
         <div class="col">
-          <div class="card h-80">
-            <div class="card-body">
+          <div class="card h-100 pricing-card">
+            <div class="card-header">
               <h5 class="fw-bold">Goa Beach Packages</h5>
-              <p>Duration: 5 Days / 4 Nights</p>
-              <h4 class="text-success fw-bold">$999</h4>
-              <button class="btn btn-primary w-100 mt-2" data-bs-target="#bookingModal">Book Now</button>
+              <span class="badge bg-warning text-dark">Best Value</span>
+            </div>
+            <div class="card-body">
+              <div class="price-tag">
+                <span class="currency">$</span>
+                <span class="amount">999</span>
+                <span class="period">/person</span>
+              </div>
+              <p class="duration"><i class="fas fa-calendar-alt"></i> 5 Days / 4 Nights</p>
+              <ul class="features-list">
+                <li><i class="fas fa-check text-success"></i> Beachside Resort</li>
+                <li><i class="fas fa-check text-success"></i> Water Sports</li>
+                <li><i class="fas fa-check text-success"></i> Local Cuisine</li>
+                <li><i class="fas fa-check text-success"></i> Airport Transfer</li>
+              </ul>
+              <button class="btn btn-primary w-100 mt-3" data-bs-target="#bookingModal">Book Now</button>
             </div>
           </div>
         </div>
         <div class="col">
-          <div class="card h-80">
+          <div class="card h-100 pricing-card featured">
+            <div class="card-header">
+              <h5 class="fw-bold">Manali Adventure</h5>
+              <span class="badge bg-danger">Popular</span>
+            </div>
             <div class="card-body">
-              <h5 class="fw-bold">Manali Adventure Packages</h5>
-              <p>Duration: 6 Days / 5 Nights</p>
-              <h4 class="text-success fw-bold">$1200</h4>
-              <button class="btn btn-primary w-100 mt-2" data-bs-target="#bookingModal">Book Now</button>
+              <div class="price-tag">
+                <span class="currency">$</span>
+                <span class="amount">1200</span>
+                <span class="period">/person</span>
+              </div>
+              <p class="duration"><i class="fas fa-calendar-alt"></i> 6 Days / 5 Nights</p>
+              <ul class="features-list">
+                <li><i class="fas fa-check text-success"></i> Mountain Resort</li>
+                <li><i class="fas fa-check text-success"></i> Trekking Guide</li>
+                <li><i class="fas fa-check text-success"></i> Adventure Sports</li>
+                <li><i class="fas fa-check text-success"></i> All Meals Included</li>
+              </ul>
+              <button class="btn btn-primary w-100 mt-3" data-bs-target="#bookingModal">Book Now</button>
             </div>
           </div>
         </div>
         <div class="col">
-          <div class="card h-80">
+          <div class="card h-100 pricing-card">
+            <div class="card-header">
+              <h5 class="fw-bold">Kerala Backwater</h5>
+              <span class="badge bg-info">Relaxing</span>
+            </div>
             <div class="card-body">
-              <h5 class="fw-bold">Kerala Backwater Packages</h5>
-              <p>Duration: 4 Days / 3 Nights</p>
-              <h4 class="text-success fw-bold">$1000</h4>
-              <button class="btn btn-primary w-100 mt-2" data-bs-target="#bookingModal">Book Now</button>
+              <div class="price-tag">
+                <span class="currency">$</span>
+                <span class="amount">1000</span>
+                <span class="period">/person</span>
+              </div>
+              <p class="duration"><i class="fas fa-calendar-alt"></i> 4 Days / 3 Nights</p>
+              <ul class="features-list">
+                <li><i class="fas fa-check text-success"></i> Houseboat Stay</li>
+                <li><i class="fas fa-check text-success"></i> Village Tours</li>
+                <li><i class="fas fa-check text-success"></i> Ayurvedic Spa</li>
+                <li><i class="fas fa-check text-success"></i> Traditional Meals</li>
+              </ul>
+              <button class="btn btn-primary w-100 mt-3" data-bs-target="#bookingModal">Book Now</button>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100 pricing-card">
+            <div class="card-header">
+              <h5 class="fw-bold">Rajasthan Heritage</h5>
+              <span class="badge bg-secondary">Cultural</span>
+            </div>
+            <div class="card-body">
+              <div class="price-tag">
+                <span class="currency">$</span>
+                <span class="amount">1100</span>
+                <span class="period">/person</span>
+              </div>
+              <p class="duration"><i class="fas fa-calendar-alt"></i> 7 Days / 6 Nights</p>
+              <ul class="features-list">
+                <li><i class="fas fa-check text-success"></i> Palace Hotels</li>
+                <li><i class="fas fa-check text-success"></i> Cultural Shows</li>
+                <li><i class="fas fa-check text-success"></i> Desert Safari</li>
+                <li><i class="fas fa-check text-success"></i> Guide Services</li>
+              </ul>
+              <button class="btn btn-primary w-100 mt-3" data-bs-target="#bookingModal">Book Now</button>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100 pricing-card">
+            <div class="card-header">
+              <h5 class="fw-bold">Golden Triangle</h5>
+              <span class="badge bg-primary">Classic</span>
+            </div>
+            <div class="card-body">
+              <div class="price-tag">
+                <span class="currency">$</span>
+                <span class="amount">850</span>
+                <span class="period">/person</span>
+              </div>
+              <p class="duration"><i class="fas fa-calendar-alt"></i> 5 Days / 4 Nights</p>
+              <ul class="features-list">
+                <li><i class="fas fa-check text-success"></i> 3-Star Hotels</li>
+                <li><i class="fas fa-check text-success"></i> Monument Tours</li>
+                <li><i class="fas fa-check text-success"></i> Transport Included</li>
+                <li><i class="fas fa-check text-success"></i> Breakfast Daily</li>
+              </ul>
+              <button class="btn btn-primary w-100 mt-3" data-bs-target="#bookingModal">Book Now</button>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100 pricing-card">
+            <div class="card-header">
+              <h5 class="fw-bold">Ladakh Expedition</h5>
+              <span class="badge bg-warning text-dark">Adventure</span>
+            </div>
+            <div class="card-body">
+              <div class="price-tag">
+                <span class="currency">$</span>
+                <span class="amount">1500</span>
+                <span class="period">/person</span>
+              </div>
+              <p class="duration"><i class="fas fa-calendar-alt"></i> 8 Days / 7 Nights</p>
+              <ul class="features-list">
+                <li><i class="fas fa-check text-success"></i> Camp Stay</li>
+                <li><i class="fas fa-check text-success"></i> Bike Rental</li>
+                <li><i class="fas fa-check text-success"></i> Pangong Lake Visit</li>
+                <li><i class="fas fa-check text-success"></i> Permits Included</li>
+              </ul>
+              <button class="btn btn-primary w-100 mt-3" data-bs-target="#bookingModal">Book Now</button>
             </div>
           </div>
         </div>

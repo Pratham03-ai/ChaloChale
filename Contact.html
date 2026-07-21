@@ -3,96 +3,199 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bootstrap Footer</title>
-
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Bootstrap Icons -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-
-    <style>
-        footer{
-            padding:70px 0;
-            background:#fff;
-        }
-
-        footer h2{
-            font-weight:bold;
-            margin-bottom:25px;
-        }
-
-        footer p{
-            font-size:20px;
-            line-height:1.8;
-        }
-
-        .quick-links a{
-            display:block;
-            text-decoration:none;
-            font-size:20px;
-            margin-bottom:10px;
-        }
-
-        .social-icons a{
-            display:block;
-            padding-right: 50px;
-            font-size:35px;
-            color:#212529;
-            margin-bottom:20px;
-        }
-
-        .social-icons a:hover{
-            color:#0d6efd;
-        }
-    </style>
+    <title>Contact Us - ChaloChale Travel App</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="/CSS/index.css">
 </head>
 <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
 
-<footer>
-    <div class="container">
+            <!-- Brand -->
+            <a class="navbar-brand" href="#">
+                <i class="fas fa-plane-departure"></i>
+                ChaloChale
+            </a>
 
-        <div class="row">
+            <!-- Toggle Button -->
+            <button class="navbar-toggler" type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbarNav"
+                    aria-controls="navbarNav"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation">
 
-            <!-- Address -->
-            <div class="col-md-4">
-                <h2>ITVEDANT EDUCATION PVT LTD.</h2>
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-                <p>
-                    3rd Floor, Korem Mall,<br>
-                    Near Toyota Showroom,<br>
-                    Road No.22, Wagle Estate,<br>
-                    Thane-West
-                </p>
-            </div>
+            <!-- Navbar Links -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
 
-            <!-- Quick Links -->
-            <div class="col-md-4 text-md-center quick-links">
-                <h2>Quick Links</h2>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    </li>
 
-                <a href="#">Home</a>
-                <a href="#">About Us</a>
-                <a href="#">Courses</a>
-                <a href="#">Placements</a>
-            </div>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="Destinations.html">Destination</a>
+                    </li>
 
-            <!-- Social Icons -->
-            <div class="col-md-4 text-md-end social-icons">
-                <h2>Connect Us</h2>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="Packages.html">Packages</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="booking.html">Booking</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="Contact.html">Contact</a>
+                    </li>
+                    <a href="signup.html" class="btn btn-warning ms-lg-3">Sign Up</a>
+                    <a href="login.html" class="btn btn-warning ms-lg-3">Login</a>
 
-                <a href="#"><i class="bi bi-facebook"></i></a>
-                <a href="#"><i class="bi bi-instagram"></i></a>
-                <a href="#"><i class="bi bi-linkedin"></i></a>
-                <a href="#"><i class="bi bi-twitter-x"></i></a>
+                </ul>
             </div>
 
         </div>
+    </nav>
 
-    </div>
-</footer>
+    <!-- Contact Section -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <div class="text-center mb-5">
+                        <h2 class="fw-bold" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">Get In Touch</h2>
+                        <p class="lead">Have questions? We'd love to hear from you. Send us a message and we'll respond as soon as possible.</p>
+                    </div>
 
-<!-- Bootstrap JS -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+                    <div class="card shadow-lg">
+                        <div class="card-body p-5">
+                            <form>
+                                <div class="row">
+                                    <div class="col-md-6 mb-3">
+                                        <label for="name" class="form-label">Full Name</label>
+                                        <input type="text" class="form-control" id="name" placeholder="Enter your name" required>
+                                    </div>
+                                    <div class="col-md-6 mb-3">
+                                        <label for="email" class="form-label">Email Address</label>
+                                        <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+                                    </div>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="subject" class="form-label">Subject</label>
+                                    <input type="text" class="form-control" id="subject" placeholder="Enter subject" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="message" class="form-label">Message</label>
+                                    <textarea class="form-control" id="message" rows="5" placeholder="Your message here..." required></textarea>
+                                </div>
+                                <button type="submit" class="btn btn-primary w-100">Send Message</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
+            <!-- Contact Info Cards -->
+            <div class="row mt-5">
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100 text-center contact-card">
+                        <div class="card-body">
+                            <div class="contact-icon mb-3">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <h5 class="card-title fw-bold">Our Location</h5>
+                            <p class="card-text">123 Travel Street, Mumbai, India</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100 text-center contact-card">
+                        <div class="card-body">
+                            <div class="contact-icon mb-3">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <h5 class="card-title fw-bold">Phone Number</h5>
+                            <p class="card-text">+91 98765 43210</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100 text-center contact-card">
+                        <div class="card-body">
+                            <div class="contact-icon mb-3">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <h5 class="card-title fw-bold">Email Address</h5>
+                            <p class="card-text">info@chalochale.com</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row footer-content">
+                <div class="col-lg-4 mb-4">
+                    <div class="footer-logo">
+                        <i class="fas fa-plane-departure"></i>
+                        ChaloChale
+                    </div>
+                    <p class="footer-description">
+                        Your trusted travel companion for exploring the world's most beautiful destinations. We make travel planning easy and affordable.
+                    </p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 mb-4">
+                    <h5 class="footer-heading">Quick Links</h5>
+                    <ul class="footer-links">
+                        <li><a href="index.html"><i class="fas fa-chevron-right"></i> Home</a></li>
+                        <li><a href="Destinations.html"><i class="fas fa-chevron-right"></i> Destinations</a></li>
+                        <li><a href="Packages.html"><i class="fas fa-chevron-right"></i> Packages</a></li>
+                        <li><a href="Booking.html"><i class="fas fa-chevron-right"></i> Booking</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-4 mb-4">
+                    <h5 class="footer-heading">Support</h5>
+                    <ul class="footer-links">
+                        <li><a href="Contact.html"><i class="fas fa-chevron-right"></i> Contact Us</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> FAQ</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> Privacy Policy</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> Terms of Service</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-4 mb-4">
+                    <h5 class="footer-heading">Contact Info</h5>
+                    <div class="footer-contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>123 Travel Street, Mumbai, India</span>
+                    </div>
+                    <div class="footer-contact-item">
+                        <i class="fas fa-phone"></i>
+                        <span>+91 98765 43210</span>
+                    </div>
+                    <div class="footer-contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>info@chalochale.com</span>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 ChaloChale Travel App. All rights reserved. | Designed with <i class="fas fa-heart text-danger"></i> by ChaloChale Team</p>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
